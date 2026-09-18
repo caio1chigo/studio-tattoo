@@ -767,7 +767,61 @@ h3 {
   text-align: center;
   font-size: 0.82rem;
 }
+.botao-topo {
+  position: fixed;
+  right: 24px;
+  bottom: 88px;
+  z-index: 80;
+  display: grid;
+  width: 54px;
+  height: 54px;
+  place-items: center;
+  border: 1px solid rgba(244, 239, 228, 0.25);
+  border-radius: 50%;
+  background: var(--cor-preto);
+  color: var(--cor-creme);
+  font-family: var(--fonte-titulo);
+  font-size: 1.5rem;
+  line-height: 1;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0.3s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease;
+}
 
+/* Classe adicionada via JS quando o usuário rola a página */
+.botao-topo.visivel {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.botao-topo:hover,
+.botao-topo:focus-visible {
+  border-color: var(--cor-vermelho);
+  background: var(--cor-vermelho);
+  transform: translateY(-3px);
+}
+
+.botao-topo:focus-visible {
+  outline: 3px solid rgba(179, 36, 31, 0.4);
+  outline-offset: 4px;
+}
+
+@media (max-width: 620px) {
+  .botao-topo {
+    right: 16px;
+    bottom: 74px;
+    width: 46px;
+    height: 46px;
+    font-size: 1.25rem;
+  }
+}
 /* ===== RESPONSIVIDADE ===== */
 @media (max-width: 960px) {
   .nav-principal,
