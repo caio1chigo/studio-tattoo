@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Tattoo | Estúdio de Tatuagem</title>
+  <meta
+    name="description"
+    content="Estúdio de tatuagem focado em estilo, técnica e bem-estar. Conheça nossos artistas, agende sua sessão e venha nos visitar."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Loader simples -->
+  <div id="loader" aria-hidden="true">
+    <span class="loader-marca">STUDIO TATTOO</span>
+    <span class="loader-linha"></span>
+  </div>
+
+  <!-- Cabeçalho fixo -->
+  <header class="cabecalho">
+    <nav class="nav-secundaria" aria-label="Navegação secundária">
+      <a href="#estudio">Informações</a>
+      <a href="#localizacao">Contato</a>
+    </nav>
+
+    <a href="#topo" class="logo" aria-label="Ir para o início">
+      Studio<br>
+      <span>Tattoo</span>
+    </a>
+
+    <nav class="nav-principal" aria-label="Navegação principal">
+      <a href="#tatuadores">Artistas</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#faq">FAQ</a>
+      <a href="#formulario-contato" class="botao-nav">Agendar sessão →</a>
+    </nav>
+
+    <button
+      class="menu-hamburguer"
+      type="button"
+      id="menu-btn"
+      aria-label="Abrir menu"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Menu mobile -->
+  <nav class="menu-mobile" id="menu-mobile" aria-label="Navegação mobile">
+    <a href="#estudio">Informações</a>
+    <a href="#tatuadores">Artistas</a>
+    <a href="#avaliacoes">Avaliações</a>
+    <a href="#faq">FAQ</a>
+    <a href="#localizacao">Localização</a>
+    <a href="#formulario-contato">Contato</a>
+  </nav>
+
+  <main id="topo">
+     <a
+  class="botao-whatsapp-flutuante"
+  href="https://wa.me/556182118809?text=Ol%C3%A1%2C%20Caio%21%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20falar%20sobre%20um%20projeto."
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Falar com Caio pelo WhatsApp">
+  <span aria-hidden="true">☏</span>
+  <span>WhatsApp</span>
+</a>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <img
+        src="src/rita2.jpg"
+        alt=""
+        class="hero-fundo"
+      >
+      <div class="hero-sobreposicao" aria-hidden="true"></div>
+
+      <div class="hero-conteudo">
+        <p class="hero-etiqueta">Estúdio autoral · Brasília-DF</p>
+
+        <h1>Tattoo<br>Studio</h1>
+
+        <p class="hero-descricao">
+          Um espaço dedicado à tatuagem autoral, com técnica apurada,
+          ambiente acolhedor e atenção total ao seu cuidado do início
+          ao fim do processo.
+        </p>
+
+        <div class="hero-botoes">
+          <a href="#formulario-contato" class="botao botao-primario">
+            Agendar avaliação →
+          </a>
+          <a href="#localizacao" class="botao botao-secundario">
+            Localização
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Barra de informações rápidas -->
+    <div class="barra-info">
+      <span>Ter a Sáb</span>
+      <span aria-hidden="true">✦</span>
+      <span>10h → 19h</span>
+      <span aria-hidden="true">✦</span>
+      <span>Asa Norte · Brasília</span>
+      <span aria-hidden="true">✦</span>
+      <span>Orçamento sem compromisso</span>
+      <span aria-hidden="true">✦</span>
+      <span>Black Work & Old School</span>
+      <span aria-hidden="true">✦</span>
+      <span>Fine Line & Botânico</span>
+      <span aria-hidden="true">✦</span>
+      <span>Realismo & Retrato</span>
+      <span aria-hidden="true">✦</span>
+      <span>Autoral & Ilustrativo</span>
+      <span aria-hidden="true">✦</span>
+      <a href="#formulario-contato">Agendar sessão</a>
+    </div>
+
+    <!-- Início / Apresentação -->
+    <section class="secao inicio" id="inicio">
+      <div class="inicio-texto">
+        <p class="etiqueta">Sobre o estúdio</p>
+
+        <h2>
+          Novo estúdio de tatuagem focado em estilo e bem-estar.
+        </h2>
+
+        <p>
+          Reunimos artistas de estilos diferentes em um único espaço
+          pensado para transformar a experiência de se tatuar: ambiente
+          limpo, material esterilizado individualmente e um atendimento
+          que começa muito antes da agulha tocar a pele.
+        </p>
+
+        <p>
+          Cada sessão é conduzida com calma, respeitando o tempo do
+          cliente e o cuidado necessário para transformar uma ideia em
+          uma tatuagem que realmente faça sentido para você.
+        </p>
+
+        <a href="#tatuadores" class="link-secao">
+          Conheça os artistas <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <div class="inicio-imagem">
+        <img src="src/rita2.jpg" alt="Sessão de tatuagem em andamento no estúdio">
+      </div>
+    </section>
+
+    <!-- Conheça o estúdio -->
+    <section class="secao estudio" id="estudio">
+      <div class="estudio-imagem">
+        <img src="src/rita2.jpg" alt="Ambiente interno do estúdio de tatuagem">
+      </div>
+
+      <div class="estudio-texto">
+        <p class="etiqueta">O espaço</p>
+
+        <h2>Conheça o nosso estúdio.</h2>
+
+        <p>
+          Um ambiente planejado para tatuagem autoral, com estações
+          individuais, boa iluminação para trabalhos detalhados e
+          protocolos de biossegurança seguidos rigorosamente em cada
+          atendimento.
+        </p>
+
+        <p>
+          Aqui você encontra flashes disponíveis para tatuar na hora,
+          além de projetos totalmente personalizados desenvolvidos em
+          conjunto com o artista escolhido.
+        </p>
+
+        <a href="#formulario-contato" class="botao botao-primario">
+          Fale com a gente
+        </a>
+      </div>
+    </section>
+
+    <!-- Artistas -->
+    <section class="secao tatuadores" id="tatuadores">
+      <div class="secao-cabecalho">
+        <p class="etiqueta">Nossa equipe</p>
+        <h2>Nossos artistas.</h2>
+        <p>
+          Estilos diferentes, o mesmo compromisso com técnica e
+          cuidado. Conheça quem vai transformar sua ideia em tatuagem.
+        </p>
+      </div>
+
+      <div class="grade-artistas">
+        <article class="artista-card">
+          <img src="src/rita2.jpg" alt="Foto do tatuador Rico Duarte">
+          <h3>Rico Duarte</h3>
+          <p>Blackwork &amp; Old School:</p>
+          <p>Combina o traço grosso e os temas clássicos do estilo tradicional com o uso exclusivo de tinta preta e sombras sólidas.</p>
+        </article>
+
+        <article class="artista-card">
+          <img src="src/rita2.jpg" alt="Foto da tatuadora Bia Nogueira">
+          <h3>Bia Nogueira</h3>
+          <p>Fine Line &amp; Botânico:</p>
+          <p>Combina traços finos e delicados com elementos da natureza, como flores, folhas e ramo.</p>
+        </article>
+
+        <article class="artista-card">
+          <img src="src/rita2.jpg" alt="Foto do tatuador Theo Alencar">
+          <h3>Theo Alencar</h3>
+          <p>Realismo &amp; Retrato:</p>
+          <p>Técnica artística avançada que busca reproduzir fotografias na pele com o máximo de fidelidade, profundidade e precisão.</p>
+        </article>
+
+        <article class="artista-card">
+          <img src="src/rita2.jpg" alt="Foto da tatuadora Nina Farias">
+          <h3>Nina Farias</h3>
+          <p>Autoral &amp; Ilustrativo:</p>
+          <p>Desenho exclusivo criado do zero pelo artista especificamente para você, com forte apelo artístico e visual de ilustração.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="secao faq" id="faq">
+      <div class="secao-cabecalho">
+        <p class="etiqueta">Dúvidas frequentes</p>
+        <h2>FAQ</h2>
+        <p>Perguntas que a gente mais recebe antes de uma sessão.</p>
+      </div>
+
+      <div class="lista-faq">
+        <details class="item-faq" open>
+          <summary>
+            O procedimento dói?
+            <span aria-hidden="true">+</span>
+          </summary>
+          <p>
+            Existe desconforto, que varia de pessoa para pessoa e conforme
+            a região do corpo. Nossa equipe explica todo o processo antes
+            de começar para reduzir a ansiedade.
+          </p>
+        </details>
+
+        <details class="item-faq">
+          <summary>
+            Quanto tempo leva até a cicatrização?
+            <span aria-hidden="true">+</span>
+          </summary>
+          <p>
+            O tempo médio de cicatrização visível é de 2 a 4 semanas,
+            variando conforme o tamanho, a região tatuada e os cuidados
+            seguidos no pós-tatuagem.
+          </p>
+        </details>
+
+        <details class="item-faq">
+          <summary>
+            Preciso agendar uma avaliação antes?
+            <span aria-hidden="true">+</span>
+          </summary>
+          <p>
+            Sim. Para projetos personalizados, fazemos uma conversa
+            inicial para entender referência, tamanho e local do corpo
+            antes de fechar valor e data.
+          </p>
+        </details>
+
+        <details class="item-faq">
+          <summary>
+            Vocês aceitam cartão e pagamento parcelado?
+            <span aria-hidden="true">+</span>
+          </summary>
+          <p>
+            Aceitamos pix, cartão de débito e crédito, com parcelamento
+            disponível para sessões de maior valor.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Avaliações -->
+    <section class="secao avaliacoes" id="avaliacoes">
+      <div class="secao-cabecalho">
+        <p class="etiqueta">Depoimentos</p>
+        <h2>Avaliações</h2>
+        <p>Veja o que nossos clientes dizem.</p>
+      </div>
+
+      <div class="grade-depoimentos">
+        <article class="depoimento-card">
+          <p class="depoimento-estrelas" aria-hidden="true">★★★★★</p>
+          <p>
+            “Estúdio maneirão. Ambiente limpo, artista super atencioso e
+            o resultado ficou exatamente como eu queria.”
+          </p>
+          <span class="depoimento-autor">— Marcela T.</span>
+        </article>
+
+        <article class="depoimento-card">
+          <p class="depoimento-estrelas" aria-hidden="true">★★★★★</p>
+          <p>
+            “Já fiz duas tatuagens aqui e as duas vezes fui muito bem
+            atendida, desde o orçamento até a cicatrização.”
+          </p>
+          <span class="depoimento-autor">— Felipe A.</span>
+        </article>
+
+        <article class="depoimento-card">
+          <p class="depoimento-estrelas" aria-hidden="true">★★★★★</p>
+          <p>
+            “Recomendo demais. Profissionais atenciosos e um cuidado com
+            biossegurança que me deixou bem mais tranquila.”
+          </p>
+          <span class="depoimento-autor">— Duda S.</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- Localização -->
+   <section class="secao localizacao" id="localizacao">
+  <div class="localizacao-texto">
+    <p class="etiqueta">Onde estamos</p>
+    <h2>Localização</h2>
+    <p>Venham nos visitar.</p>
+  </div>
+
+  <div class="mapa-wrapper">
+    <iframe
+      src="https://www.google.com/maps/embed?..."
+      title="Mapa da localização do estúdio em Brasília"
+      allowfullscreen
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+    ></iframe>
+  </div>
+</section>
+
+    <!-- Formulário de contato -->
+    <section class="secao formulario-contato" id="formulario-contato">
+      <div class="secao-cabecalho">
+        <p class="etiqueta">Contato</p>
+        <h2>Fale com a gente</h2>
+        <p>Conte sua ideia e agende uma avaliação sem compromisso.</p>
+      </div>
+
+      <form class="contact-form" id="contact-form">
+        <div class="form-group">
+          <label for="nome">Seu nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome aqui" required>
+        </div>
+
+        <div class="form-group">
+          <label for="whats">WhatsApp</label>
+          <input type="tel" id="whats" name="whats" placeholder="(61) 90000-0000" required>
+        </div>
+
+        <div class="form-group">
+          <label for="msg">Mensagem</label>
+          <textarea
+            id="msg"
+            name="msg"
+            placeholder="Ex: Tenho interesse em agendar uma avaliação."
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="botao botao-primario botao-form">
+          Enviar mensagem →
+        </button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>© 2026 Studio Tattoo. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
