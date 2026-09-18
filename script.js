@@ -51,3 +51,15 @@ if (form) {
     window.open(`https://wa.me/5561900000000?text=${texto}`, "_blank");
   });
 }
+const botaoTopo = document.querySelector(".botao-topo");
+
+if (botaoTopo) {
+  function atualizarBotaoTopo() {
+    const rolouBastante = window.scrollY > window.innerHeight * 0.6;
+
+    botaoTopo.classList.toggle("visivel", rolouBastante);
+  }
+
+  window.addEventListener("scroll", atualizarBotaoTopo, { passive: true });
+  atualizarBotaoTopo();
+}
